@@ -3242,15 +3242,15 @@
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
 		color: #636363;
-		position: absolute;
+		position: fixed;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
-		border-top-left-radius: 0.25em;
-		border-top-right-radius: 0.25em;
+		border-bottom-left-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
 		cursor: default;
-		text-align: center;
+		text-align: right;
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3301,7 +3301,15 @@
 				margin: 0 0.35em;
 				padding: 0;
 				vertical-align: middle;
+				font-style: italic;
 			}
+
+				#nav ul li:first-child {
+					float: left;
+					font-size: 1.1em;
+					font-weight: 300;
+					font-style: normal;
+				}
 
 				#nav ul li a {
 					-moz-transition: font-size 0.2s ease;
